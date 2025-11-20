@@ -1,0 +1,15 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.yarnrc
+**/tsconfig.json
+**/*.map
+**/*.ts
+**/.vscode-test.*
+.claude/**
+CLAUDE.md
+CONTRIBUTING.md
+.git/**
+pnpm-lock.yaml
+.prettierrc.js

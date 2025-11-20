@@ -1,0 +1,47 @@
+{
+    "name": "ai-calls-editor",
+    "displayName": "AI-calls-Editor",
+    "description": "MCP server for LSP-powered symbol renaming via HTTP",
+    "version": "0.1.0",
+    "publisher": "ai-calls-editor",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rokstrnisa/ai-calls-editor"
+    },
+    "engines": {
+        "vscode": "^1.99.3"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {},
+    "author": {
+        "name": "Rok Strniša",
+        "url": "https://github.com/rokstrnisa"
+    },
+    "scripts": {
+        "vscode:prepublish": "pnpm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "format:check": "prettier --check \"src/**/*.ts\""
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.5",
+        "@types/node": "22.x",
+        "@types/vscode": "^1.106.0",
+        "prettier": "^3.4.2",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@cfworker/json-schema": "^4.1.1",
+        "@modelcontextprotocol/sdk": "^1.22.0",
+        "express": "^5.1.0",
+        "zod": "^3.23.8"
+    }
+}
